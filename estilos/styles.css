@@ -28,17 +28,35 @@ header {
     padding: 20px 0;
     text-align: center;
 }
-nav {
-    background: #0073e6;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
-}
-nav ul {
-    list-style: none;
+h1 {
     margin: 0;
-    padding: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+p {
+    text-align: justify;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+nav {
+    background-color: #0073e6;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: #0073e6;
+    border-radius: 5px;
 }
 .profile-img {
     display: block;
