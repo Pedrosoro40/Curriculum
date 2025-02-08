@@ -2,13 +2,14 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1110109a;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8);
     color: #333;
     line-height: 1.6;
 }
@@ -23,7 +24,7 @@ main {
     padding: 20px;
 }
 header {
-    background: #0073e6;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8);
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -39,7 +40,7 @@ p {
     line-height: 1.5;
 }
 nav {
-    background-color: #0073e6;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8) ;
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
@@ -64,10 +65,14 @@ nav > a:hover {
     width: 150px;
     border-radius: 50%;
 }
+main {
+    padding: 20px;
+    background-image: linear-gradient(to right, #0073e6, #00b4d8);
+}
 .section {
     margin: 20px 0;
     padding: 20px;
-    background: white;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -89,10 +94,10 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-footer {
+footer> p {
     text-align: center;
     padding: 15px 0;
-    background: #0073e6;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8) ;
     color: white;
 }
 section{

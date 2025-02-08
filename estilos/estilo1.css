@@ -2,14 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8);
     text-align: center;
 }
 header {
-    background: #333;
+    background-image:linear-gradient(to right, #0073e6, #00b4d8);
     color: white;
     padding: 20px;
     font-size: 24px;
+}
+main {
+    padding: 20px;
+    background-image: linear-gradient(to right, #0073e6, #00b4d8);
 }
 .container {
     max-width: 1000px;
@@ -30,7 +34,7 @@ img {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #333;
+    background-image:linear-gradient(to right, #0073e6, #030550);
     color: white;
     text-decoration: none;
     border-radius: 5px;
