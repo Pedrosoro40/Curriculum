@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Navbar fixa no topo */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #6200EA;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #03A9F4;
+}
+
+/* Adiciona espaço no topo para compensar a navbar fixa */
+header {
+        text-align: center;
+        padding: 60px 20px 20px;
+        background-color: #6200EA;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.profile-pic {
+    display: block;
+    width: 200px; /* Reduzindo o tamanho */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto; /* Mantém centralizado */
+    border: 3px solid white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+   
+
+
+/* Estilizando seções */
+section {
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização das experiências */
+.job, .school {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job:hover, .school:hover {
+    transform: scale(1.02);
+    background: #EDE7F6;
+}
+
+/* Imagens */
+.job img, .school img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job:hover img, .school:hover img {
+    transform: scale(1.1);
+}
+
+/* Habilidades */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #6200EA;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.skills li:hover {
+    background: #3700B3;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact a {
+    color: #6200EA;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact i {
+    font-size: 20px; /* Tamanho dos ícones */
+    color: #6200EA;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact i:hover {
+    color: #03A9F4; /* Cor ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6200EA;
+    color: white;
+    margin-top: 20px;
+}

@@ -1,43 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="estilos/styles.css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Currículo Interativo</title>
+        <link rel="stylesheet" href="styles.css">
+        <!-- Link para o Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
 </head>
 <body>
-    <section>
 
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#info">Sobre Mim</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#education">Educação</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Ronaldo Ribeiro Pedroso</h1>
+        <p>Estagiário, Estudante, Desenvolvedor, Analista de Dados</p>
+        <img src="./imagens/20240924_182743 (2).jpg" alt="Sua Foto" class="profile-pic">
+    </header>
+
+    <section id="info" class="info">
+        <h2>Sobre Mim</h2>
+        <p>Sou apaixonado por tecnologia e desenvolvimento, sempre buscando aprender e aprimorar minhas habilidades.</p>
     </section>
-    <main>
-        <header>
-            <h1>Ronaldo Ribeiro Pedroso</h1>
-            <p>Desenvolvedor | Designer | Criativo</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="portifolio.html" target="_blank">Portfólio</a></li><br>
-                <li><a href="contatos.html" target="_blank">Contato</a></li><br>
-            </ul>        
-        </nav>
-        <section>
-            <div class="container">
-                <img src="imagens/20240924_182743 (2).jpg" alt="Minha Foto" class="profile-img">
-        
-                <div class="section">
-                    <h2>Sobre Mim</h2>
-                    <p>Sou um profissional apaixonado por tecnologia e design. Trabalho com desenvolvimento web e criação de interfaces intuitivas.</p>
-                    <p>Estou sempre em busca de novos desafios e oportunidades para me tornar um desenvolvedor completo.</p>
-                    <p>Sou novo na area mas estou disposto a aprender e crescer profissionalmente.</p>
-                </div>
+
+    <section id="experience" class="experience">
+        <h2>Experiência Profissional</h2>
+        <div class="job">
+            <img src="./imagens/wolf1.jpeg" alt="Wolf Brasil">
+            <div>
+                <h3>Wolf Brasil Tático e Monitoramento - Monitor Interno</h3>
+                <p class="details">Monitoramento de empresas e residências, prezando pela segurança.</p>
             </div>
-            </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
-    </footer>    
-<script src="script.js"></script>     
+        </div>
+        <div class="job">
+            <img src="./imagens/rio verde.avif" alt="Supermercados Rio Verde">
+            <div>
+                <h3>Rede de Supermercados Rio Verde - Fiscal de Loja</h3>
+                <p class="details">Prevenção contra furtos e roubos internos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Educação</h2>
+        <div class="school">
+            <img src="./imagens/images.png" alt="Uniasselvi">
+            <div>
+                <h3>Uniasselvi - Análise e Desenvolvimento de Sistemas</h3>
+                <p>Conclusão prevista: Junho/2026</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Proatividade</li>
+            <li>Resolução de Problemas</li>
+            <li>Criatividade</li>
+            <li>Desenvolvimento Web</li>
+            <li>SQL e Banco de Dados</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ronaldopedroso40@gmail.com">ronaldopedroso40@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5541991339076" target="_blank">WhatsApp</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/ronaldo-pedroso-a498b7249" target="_blank">Ronaldo Pedroso</a></p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Pedrosoro40" target="_blank">Pedrosoro40</a></p>
+    </section>
     
+
+    <footer>
+        <p>&copy; 2025 Ronaldo Pedroso. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
