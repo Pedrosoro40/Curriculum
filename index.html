@@ -10,24 +10,26 @@
     
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#info">Sobre Mim</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#education">Educação</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
-
     <header>
         <h1>Ronaldo Ribeiro Pedroso</h1>
         <p>Estagiário, Estudante, Desenvolvedor, Analista de Dados</p>
         <img src="./imagens/20240924_182743 (2).jpg" alt="Sua Foto" class="profile-pic">
+    
+        <!-- Menu de navegação abaixo da foto -->
+        <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
+    
     <section id="info" class="info">
         <h2>Sobre Mim</h2>
         <p>Sou apaixonado por tecnologia e desenvolvimento, sempre buscando aprender e aprimorar minhas habilidades.</p>
@@ -79,6 +81,21 @@
         <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5541991339076" target="_blank">WhatsApp</a></p>
         <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/ronaldo-pedroso-a498b7249" target="_blank">Ronaldo Pedroso</a></p>
         <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Pedrosoro40" target="_blank">Pedrosoro40</a></p>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="imagens/projeto1.jpg" alt="Projeto 1">
+                <h3>Sistema de Monitoramento</h3>
+                <p>Desenvolvi um sistema para monitoramento de segurança utilizando tecnologias modernas.</p>
+            </div>
+            <div class="project">
+                <img src="imagens/projeto2.jpg" alt="Projeto 2">
+                <h3>Aplicativo de Gestão</h3>
+                <p>Participei do desenvolvimento de um app para gerenciar tarefas e produtividade.</p>
+            </div>
+        </div>
     </section>
     
 

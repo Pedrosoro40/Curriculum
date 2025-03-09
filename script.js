@@ -5,3 +5,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}

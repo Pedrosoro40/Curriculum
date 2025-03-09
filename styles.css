@@ -7,40 +7,56 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Navbar fixa no topo */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background-color: #6200EA;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #03A9F4;
+/* Estilo do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
 }
+
+/* Responsivo: Mostra o menu hambúrguer em telas pequenas */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #6200EA;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
 
 /* Adiciona espaço no topo para compensar a navbar fixa */
 header {
@@ -151,6 +167,34 @@ section {
 .contact i:hover {
     color: #03A9F4; /* Cor ao passar o mouse */
 }
+.portfolio {
+    background: linear-gradient(45deg, #6200EA, #03A9F4);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /* Rodapé */
 footer {
